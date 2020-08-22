@@ -10,10 +10,10 @@ int RodCut(int price[],int n)
 {
 	int profit[n+1];
 	proft[0]=0;
-	int maxProfit;
+	int maxProject;
 	for(int i=1;i<=n;i++)
 	{
-		maxProfit=-INF;
+		maxProject=-INF;
 		for(int j=0;j<i;j++)
 		   maxProject=maxi(maxProject,price[j]+profit[i-j-1]);
 		profit[i]=maxProject;
